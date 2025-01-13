@@ -35,4 +35,23 @@
     margin: auto;
     display: block;
 }
-@media screen and (min-width: 1024px)
+@media screen and (min-width: 1024px) {
+    .container { 
+        width: 80% ;
+        margin: auto;
+    }
+}
+@media screen and (min-wdith: 768px) and (max-width: 1023px) {
+    .container { 
+        width: 90; 
+    }
+}
+@media screen and (max-wdith: 767px) {
+    .container {
+        width: 100;
+    }
+}
+.body-text {
+    font-family: 'Roboto', sans-serif; 
+}
+
