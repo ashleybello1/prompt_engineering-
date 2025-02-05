@@ -1,0 +1,40 @@
+body{
+  margin: 100;
+  padding: 200;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7f4a3f;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+
+.gallery-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.gallery-item{
+  display: inline-block;
+  padding: 20px;
+}
+
+.gallery-item img {
+  display: inline-block;
+  width: 200;
+  height: 200;
+  margin: 10;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+

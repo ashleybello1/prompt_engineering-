@@ -3,13 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>styles.css</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    
+    <h1 id="h1">Welcome to Elf's kitchen</h1>
+
+    <header>
+        <nav class="nav1">
+            <ul class="nav1_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pastries.html">Pastries</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+        </nav>
+        <p>welcome to Elf's kitchen! This website will show you different recipes on Mexican food and pastries. </p>
+    </header> 
+
+    <div class="container">
+        <main>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Hja9zlVQHC768PsPjWscW?utm_source=generator" width="20%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <img src="Mexican Pastries.jpeg" alt="Recipes on Mexican Pastries">
+        </main> 
+    </div>
+
+    <footer>
+        Author: Ashley Bello
+    </footer>
+
+    <div id="output"></div>
+
+    <button id="music-control">Play Music</button>
+    <audio id="background-music" src="path-to-your-audio-file.mp3"></audio>
+
+    <button id="play-pause-button">Play</button>
+    <audio id="audio-player" src="path-to-your-audio-file.mp3"></audio>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img3.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-<head>
-    <link href="https://fonts.goggleapis/com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
+

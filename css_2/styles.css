@@ -1,57 +1,112 @@
+/* Global Styles */
+body {
+    background-color: #fdf4e3; /* Warm pastry-inspired background */
+    color: #5a3e36;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Typography */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #8b4513;
+}
+
+.body-text {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Visual Appeal */
 .element-background {
-    background-color: #f0f0f0; 
+    background-color: #fae5d3; /* Light pastry-inspired shade */
 }
+
 .element.image {
-    background-image: url('image.jpg'); 
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }
+
 .rounded-border {
     border-radius: 10px;
 }
+
 .box-shadow {
-    box-shadow: 5px 5px 10px rgba(0,0,0,0,5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .text-shadow {
-    text-shadow: 2px 2px 4px #000000
+    text-shadow: 2px 2px 5px rgba(139, 69, 19, 0.5);
 }
+
+/* Button Styling */
 .button {
-    background-color: blue;
+    background-color: #d2691e;
     color: white;
-    padding: 10px 20px; 
-}
-.container .button {
+    padding: 12px 24px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
 }
+
+.button:hover {
+    background-color: #8b4513;
+}
+
 #special-button {
-    background-color: red; 
+    background-color: #b22222;
 }
+
+#special-button:hover {
+    background-color: #8b0000;
+}
+
+/* Margin and Padding */
 .margin-example {
-    margin:20px;
+    margin: 20px;
 }
-.padding-exanple {
-    padding: 10px 15px;
+
+.padding-example {
+    padding: 15px;
 }
+
+/* Centering */
 .center-element {
     margin: auto;
     display: block;
-}
-@media screen and (min-width: 1024px) {
-    .container { 
-        width: 80% ;
-        margin: auto;
-    }
-}
-@media screen and (min-wdith: 768px) and (max-width: 1023px) {
-    .container { 
-        width: 90; 
-    }
-}
-@media screen and (max-wdith: 767px) {
-    .container {
-        width: 100;
-    }
-}
-.body-text {
-    font-family: 'Roboto', sans-serif; 
+    text-align: center;
 }
 
+/* Responsive Design */
+@media screen and (min-width: 1024px) {
+    .container { 
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container { 
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+}

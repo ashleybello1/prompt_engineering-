@@ -1,0 +1,138 @@
+h1 {
+    color: rgba(143, 68, 41, 0.972);
+    font-family:'Times New Roman', Times, serif
+}
+
+p {
+    width: 60%;
+}
+
+body{
+    background-color: rgba(226, 202, 185, 0.984);
+}
+
+.nav2{
+    width: 100px;
+    border: 15px solid rgba(176, 97, 65, 0.603);
+    padding: 10px;
+    margin: 0 20px; 
+    display: flex;
+    justify-content: space-between;
+}
+#h1{
+    text-align: center;
+}
+#h1{
+    font-size: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* h2 { font-style: 
+      
+} */
+
+ul {
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+.nav1{
+    padding: 30px;
+    box-shadow: 0 25px 20px 20px rgba(0, 0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    animation: fade 2s ease-out;
+    
+}
+.nav1 ul li a{
+    list-style: none;
+    display: inline-block;
+    /* display:flex;
+    flex-direction: row; */
+    padding: 13px 35px 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color:rgb(1, 1, 1);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.nav1 ul li a::after{
+    content: '';
+    background: #ac8764;
+    width:  100%;
+    height:  70%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    z-index: -1;
+
+}
+
+.nav1_links{
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+#music-control {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+#play-pause-button {
+    background-color: #EED9c4
+    color #858585;
+    border: none;
+    padding: 10px 20px;
+    border-radius : 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#play-pause-button:hover {
+    background-color: black;
+}
+
+.container {
+    text-align: center;
+}
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+p {
+    width: 60%;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 90;
+    margin-right: auto;
+    margin-bottom: 100;
+    margin-left: auto; /* Center the paragraphs with explicit values */
+    padding: 10px;
+}
