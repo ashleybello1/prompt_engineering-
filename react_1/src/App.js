@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../App.css';
 import Card from './Components/Card'; // Make sure the folder name is spelled correctly
 
 function App() {

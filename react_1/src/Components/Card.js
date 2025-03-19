@@ -1,11 +1,40 @@
-function Card({ title, description, imageUrl }) {
-    return (
-        <div style={{ border: "1px solid #ccc", padding: "16px", borderRadius: "8px", textAlign: "center", width: "300px" }}>
-            <img src={imageUrl} alt={title} style={{ width: "100%", borderRadius: "8px" }} />
-            <h1>{title}</h1>
-            <p>{description}</p>
-        </div>
-    );
+import React, { useState } from 'react';
+import '../App.css';
+import Card from './Components/Card';
+
+function App() {
+  const [cards, setCards] = useState([
+    {
+      title: "Hello There",
+      description: "This is a sample card component with props and an image.",
+      imageUrl: "https://inmamamaggieskitchen.com/wp-content/uploads/2024/05/Strawberry-Cream-Cheese-Pastries-with-a-Sweet-Dusting.jpg"
+    },
+    {
+      title: "Hello There",
+      description: "This is a sample card component with props and an image.",
+      imageUrl: "https://inmamamaggieskitchen.com/wp-content/uploads/2024/05/Strawberry-Cream-Cheese-Pastries-with-a-Sweet-Dusting.jpg"
+    },
+    {
+      title: "Hello There",
+      description: "This is a sample card component with props and an image.",
+      imageUrl: "https://inmamamaggieskitchen.com/wp-content/uploads/2024/05/Strawberry-Cream-Cheese-Pastries-with-a-Sweet-Dusting.jpg"
+    }
+  ]);
+
+  return (
+    <div className="App">
+      {cards.map((card, index) => (
+        <Card 
+          key={index} 
+          title={card.title} 
+          description={card.description} 
+          imageUrl={card.imageUrl} 
+        />
+      ))}
+    </div>
+  );
 }
 
-export default Card;
+export default App;
+
+

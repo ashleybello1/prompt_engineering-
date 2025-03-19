@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 .App-logo {
@@ -35,4 +40,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* New Card Styles */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h1 {
+  font-size: 20px;
+  margin: 12px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
 }
